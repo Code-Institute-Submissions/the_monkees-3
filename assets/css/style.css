@@ -27,6 +27,18 @@ nav li  a:before {
   color: #c8c8c8 !important;
 }
 
+#navbar-select-color2:hover {
+  color: #c8c8c8 !important;
+}
+
+#navbar-select-color3:hover {
+  color: #c8c8c8 !important;
+}
+
+#navbar-select-color4:hover {
+  color: #c8c8c8 !important;
+}
+
 #logo-transparent {
   opacity: 1.0;
   filter: alpha(opacity=50);
@@ -106,7 +118,7 @@ ul .social-network {
   display: inline;
   margin-left: 0 !important;
   padding: 0;
-  float: center;
+  float: inherit;
 
 }
 
@@ -176,8 +188,7 @@ ul .social-network {
 }
 
 /*---------------------------------Background*/
-
-.bkgroundImg {
+#div-with-bg {
 
     background-image: url("https://i.imgur.com/qv5ZwaO.jpg"); 
     background-size: cover;
@@ -191,7 +202,7 @@ ul .social-network {
 }
 
 #footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     margin: 0 auto;
@@ -212,7 +223,7 @@ ul .social-network {
 }
 
 .image-box__background {
-  background: var(--image-url) center center no-repeat;
+  background: var(--image-url) center no-repeat;
   background-size: cover;
 
   z-index: 1
@@ -952,9 +963,9 @@ select.form-control[multiple] {
 /* ----------- iPad Pro 10.5" ----------- */
 
 @media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 834px) 
+  and (max-width: 1112px)
+  and (-webkit-min-pixel-ratio: 2) {
   .container {
       padding-bottom: 22%;
       
@@ -969,9 +980,9 @@ select.form-control[multiple] {
 /* ----------- iPad Pro 12.9" ----------- */
 
 @media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 1024px) 
+  and (max-width: 1366px)
+  and (-webkit-min-pixel-ratio: 2) {
 .container {
       padding-bottom: 22%;
       
@@ -982,16 +993,16 @@ select.form-control[multiple] {
 }
 
 /* ----------- Blackberry Playbook ----------- */
-@media (max-device-width: 600px) and (orientation: portrait) {
+@media (max-width: 600px) and (orientation: portrait) {
     .row {
       padding-top: 15%;
   }
  }
  
 @media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (min-width: 834px) 
+  and (max-width: 1112px)
+  and (-webkit-min-pixel-ratio: 2) {
   .container {
       padding-bottom: 22%;
       
@@ -1004,7 +1015,7 @@ select.form-control[multiple] {
 /* ----------- Photo Gallery ----------- */
 
 img{
-    width:100;
+    width:100%;
 }    
 
 .gallery a {
